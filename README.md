@@ -1,1 +1,1 @@
-# UBC-Ovarian-Cancer-subtypE-clAssification
+# UBC-Ovarian-Cancer-subtypE-Classification
