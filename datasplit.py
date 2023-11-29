@@ -1,19 +1,23 @@
 import os 
 import random
 from sklearn.model_selection import KFold
+import torch
 from torchvision import datasets, transforms
-from torch.utils.data import DataLoader, Subset
+from torch.utils.data import DataLoader, Subset, random_split
 
-dataset_path = "The path for the training data set"
-
+dataset_path = "Path to folder containing class folders of data"
 transform = transforms.Compose([
     transforms.Resize((224,224)),
     transforms.ToTensor(),
 ])
 
 dataset = datasets.ImageFolder(root=dataset_path, transform=transform)
-  
+
+
+# Create split sizes
 split_sizes = [int(len(dataset) * 0.2) for _ in range(5)]
+# Add remaining data to first split
+split_sizes[0] += len(dataset)%(int(len(dataset)*0.2)*5)
   
 splits = random_split(dataset, split_sizes)
   
