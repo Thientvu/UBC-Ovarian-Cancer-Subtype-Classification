@@ -5,25 +5,35 @@ import torch
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader, Subset, random_split
 
-dataset_path = "Path to folder containing class folders of data"
-transform = transforms.Compose([
-    transforms.Resize((224,224)),
-    transforms.ToTensor(),
-])
+def process_data(dataset_path):
+    # dataset_path = "Path to folder containing class folders of data"
+    transform = transforms.Compose([
+        transforms.Resize((224,224)),
+        transforms.ToTensor(),
+    ])
 
-dataset = datasets.ImageFolder(root=dataset_path, transform=transform)
+    dataset = datasets.ImageFolder(root=dataset_path, transform=transform)
 
+    return dataset
 
-# Create split sizes
-split_sizes = [int(len(dataset) * 0.2) for _ in range(5)]
-# Add remaining data to first split
-split_sizes[0] += len(dataset)%(int(len(dataset)*0.2)*5)
-  
-splits = random_split(dataset, split_sizes)
-  
-split_1, split_2, split_3, split_4, split_5 = splits
-loader_split_1 = DataLoader(split_1, batch_size=32, shuffle=True)
-loader_split_2 = DataLoader(split_2, batch_size=32, shuffle=True)
-loader_split_3 = DataLoader(split_3, batch_size=32, shuffle=True)
-loader_split_4 = DataLoader(split_4, batch_size=32, shuffle=True)
-loader_split_5 = DataLoader(split_5, batch_size=32, shuffle=True)
+def split_data(dataset_path):
+    dataset = process_data(dataset_path)
+
+    # Create split sizes
+    split_sizes = [int(len(dataset) * 0.2) for _ in range(5)]
+    # Add remaining data to first split
+    split_sizes[0] += len(dataset)%(int(len(dataset)*0.2)*5)
+    
+    splits = random_split(dataset, split_sizes)
+
+    return splits
+
+def data_loaders(test_dataset, train_splits):
+    # Creat test loader
+    test_loader =  torch.utils.data.DataLoader(dataset=test_dataset, shuffle=True)
+
+    # Combine train splits into one dataset
+    train_dataset = torch.utils.data.ConcatDataset(train_splits)
+    train_loader = torch.utils.data.DataLoader(dataset=train_dataset, shuffle=True)
+
+    return test_loader, train_loader    
