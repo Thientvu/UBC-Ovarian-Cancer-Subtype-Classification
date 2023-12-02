@@ -27,11 +27,12 @@ total_step = len(train_loader)
 for epoch in range(num_epochs):
     CNNmodel.train()
     for i, data in enumerate(train_loader):
-        image, labels = data
+        image, label = data
+        label = torch.eye(6)[label]
 
         # Forward pass
         output = CNNmodel(image)
-        loss = criterion(output,labels)
+        loss = criterion(output,label)
 
         # Backward pass and optimization
         optimizer.zero_grad()
@@ -51,7 +52,9 @@ with torch.no_grad():
     for i, data in enumerate(test_loader):
         image, label = data
         output = CNNmodel(image)
-        y_pred_tag = torch.max(output).ceil().int()
+        y_pred_tag = torch.argmax(output,1)
+
+        #print(y_pred_tag, label)
         
         y_pred_list= np.append(y_pred_list, y_pred_tag.detach().numpy())
         y_target_list = np.append(y_target_list, label.detach().numpy())
