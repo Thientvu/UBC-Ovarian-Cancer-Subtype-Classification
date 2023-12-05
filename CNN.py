@@ -2,9 +2,9 @@ import torch
 import torch.nn as nn
 from sklearn.metrics import precision_score,confusion_matrix,accuracy_score
 
-class model(nn.Module):
+class Model(nn.Module):
     def __init__(self):
-        super(model, self).__init__()
+        super(Model, self).__init__()
         self.conv1 = nn.Conv2d(3,32,3,padding=1)
         self.conv2 = nn.Conv2d(32,32,3,padding=1,stride=2)
         self.conv3 = nn.Conv2d(32,64,3,padding=1)

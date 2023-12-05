@@ -1,0 +1,316 @@
+Fold 1:
+Training the model
+Epoch [1/5], Step [41/410], Loss: 1.8164
+Epoch [1/5], Step [82/410], Loss: 1.7791
+Epoch [1/5], Step [123/410], Loss: 1.7748
+Epoch [1/5], Step [164/410], Loss: 1.7685
+Epoch [1/5], Step [205/410], Loss: 1.8055
+Epoch [1/5], Step [246/410], Loss: 1.8378
+Epoch [1/5], Step [287/410], Loss: 1.7871
+Epoch [1/5], Step [328/410], Loss: 1.8210
+Epoch [1/5], Step [369/410], Loss: 1.7894
+Epoch [1/5], Step [410/410], Loss: 1.6360
+Epoch [2/5], Step [41/410], Loss: 1.8335
+Epoch [2/5], Step [82/410], Loss: 1.5875
+Epoch [2/5], Step [123/410], Loss: 1.5684
+Epoch [2/5], Step [164/410], Loss: 1.7614
+Epoch [2/5], Step [205/410], Loss: 1.7707
+Epoch [2/5], Step [246/410], Loss: 1.5573
+Epoch [2/5], Step [287/410], Loss: 1.5327
+Epoch [2/5], Step [328/410], Loss: 1.4991
+Epoch [2/5], Step [369/410], Loss: 1.7558
+Epoch [2/5], Step [410/410], Loss: 1.4484
+Epoch [3/5], Step [41/410], Loss: 1.4010
+Epoch [3/5], Step [82/410], Loss: 1.7162
+Epoch [3/5], Step [123/410], Loss: 1.7451
+Epoch [3/5], Step [164/410], Loss: 1.8164
+Epoch [3/5], Step [205/410], Loss: 1.6938
+Epoch [3/5], Step [246/410], Loss: 1.3452
+Epoch [3/5], Step [287/410], Loss: 1.7884
+Epoch [3/5], Step [328/410], Loss: 1.3513
+Epoch [3/5], Step [369/410], Loss: 1.7238
+Epoch [3/5], Step [410/410], Loss: 1.1837
+Epoch [4/5], Step [41/410], Loss: 1.6202
+Epoch [4/5], Step [82/410], Loss: 1.6853
+Epoch [4/5], Step [123/410], Loss: 1.7132
+Epoch [4/5], Step [164/410], Loss: 2.3579
+Epoch [4/5], Step [205/410], Loss: 1.9032
+Epoch [4/5], Step [246/410], Loss: 1.0089
+Epoch [4/5], Step [287/410], Loss: 1.0148
+Epoch [4/5], Step [328/410], Loss: 1.6289
+Epoch [4/5], Step [369/410], Loss: 0.9355
+Epoch [4/5], Step [410/410], Loss: 2.0782
+Epoch [5/5], Step [41/410], Loss: 1.8100
+Epoch [5/5], Step [82/410], Loss: 0.8847
+Epoch [5/5], Step [123/410], Loss: 2.1920
+Epoch [5/5], Step [164/410], Loss: 1.5797
+Epoch [5/5], Step [205/410], Loss: 1.7929
+Epoch [5/5], Step [246/410], Loss: 2.5848
+Epoch [5/5], Step [287/410], Loss: 1.7788
+Epoch [5/5], Step [328/410], Loss: 0.7083
+Epoch [5/5], Step [369/410], Loss: 0.7914
+Epoch [5/5], Step [410/410], Loss: 0.7738
+Evaluating the model
+Accuracy: 0.3786407766990291
+Confusion Matrix:
+[[ 0  0 26  0  0]
+ [ 0  0 21  0  0]
+ [ 0  0 39  0  0]
+ [ 0  0  7  0  0]
+ [ 0  0 10  0  0]]
+Precision Score: 0.14336883777924403
+
+
+Fold 2:
+Training the model
+Epoch [1/5], Step [41/410], Loss: 1.7708
+Epoch [1/5], Step [82/410], Loss: 1.7180
+Epoch [1/5], Step [123/410], Loss: 1.8121
+Epoch [1/5], Step [164/410], Loss: 1.7683
+Epoch [1/5], Step [205/410], Loss: 1.6719
+Epoch [1/5], Step [246/410], Loss: 1.8066
+Epoch [1/5], Step [287/410], Loss: 1.7604
+Epoch [1/5], Step [328/410], Loss: 1.7988
+Epoch [1/5], Step [369/410], Loss: 1.6125
+Epoch [1/5], Step [410/410], Loss: 1.6110
+Epoch [2/5], Step [41/410], Loss: 1.5988
+Epoch [2/5], Step [82/410], Loss: 1.7181
+Epoch [2/5], Step [123/410], Loss: 1.8435
+Epoch [2/5], Step [164/410], Loss: 1.8833
+Epoch [2/5], Step [205/410], Loss: 1.8786
+Epoch [2/5], Step [246/410], Loss: 1.4630
+Epoch [2/5], Step [287/410], Loss: 1.8272
+Epoch [2/5], Step [328/410], Loss: 1.4456
+Epoch [2/5], Step [369/410], Loss: 1.4498
+Epoch [2/5], Step [410/410], Loss: 1.8167
+Epoch [3/5], Step [41/410], Loss: 1.4523
+Epoch [3/5], Step [82/410], Loss: 1.4173
+Epoch [3/5], Step [123/410], Loss: 1.3937
+Epoch [3/5], Step [164/410], Loss: 1.4012
+Epoch [3/5], Step [205/410], Loss: 1.6937
+Epoch [3/5], Step [246/410], Loss: 1.3354
+Epoch [3/5], Step [287/410], Loss: 1.2974
+Epoch [3/5], Step [328/410], Loss: 1.9603
+Epoch [3/5], Step [369/410], Loss: 1.6817
+Epoch [3/5], Step [410/410], Loss: 1.8354
+Epoch [4/5], Step [41/410], Loss: 2.0319
+Epoch [4/5], Step [82/410], Loss: 1.6675
+Epoch [4/5], Step [123/410], Loss: 1.2318
+Epoch [4/5], Step [164/410], Loss: 1.8544
+Epoch [4/5], Step [205/410], Loss: 1.2011
+Epoch [4/5], Step [246/410], Loss: 0.9684
+Epoch [4/5], Step [287/410], Loss: 1.6509
+Epoch [4/5], Step [328/410], Loss: 2.2471
+Epoch [4/5], Step [369/410], Loss: 2.3207
+Epoch [4/5], Step [410/410], Loss: 0.9716
+Epoch [5/5], Step [41/410], Loss: 2.1249
+Epoch [5/5], Step [82/410], Loss: 0.9647
+Epoch [5/5], Step [123/410], Loss: 1.1059
+Epoch [5/5], Step [164/410], Loss: 0.6731
+Epoch [5/5], Step [205/410], Loss: 2.2086
+Epoch [5/5], Step [246/410], Loss: 0.8757
+Epoch [5/5], Step [287/410], Loss: 1.7764
+Epoch [5/5], Step [328/410], Loss: 0.9219
+Epoch [5/5], Step [369/410], Loss: 1.7394
+Epoch [5/5], Step [410/410], Loss: 2.7025
+Evaluating the model
+Accuracy: 0.39805825242718446
+Confusion Matrix:
+[[ 0  0 23  0  0]
+ [ 0  0 23  0  0]
+ [ 0  0 41  0  0]
+ [ 0  0  9  0  0]
+ [ 0  0  7  0  0]]
+Precision Score: 0.15845037232538411
+
+
+Fold 3:
+Training the model
+Epoch [1/5], Step [41/410], Loss: 1.7474
+Epoch [1/5], Step [82/410], Loss: 1.7729
+Epoch [1/5], Step [123/410], Loss: 1.7465
+Epoch [1/5], Step [164/410], Loss: 1.7413
+Epoch [1/5], Step [205/410], Loss: 1.7365
+Epoch [1/5], Step [246/410], Loss: 1.7008
+Epoch [1/5], Step [287/410], Loss: 1.8068
+Epoch [1/5], Step [328/410], Loss: 1.8363
+Epoch [1/5], Step [369/410], Loss: 1.7924
+Epoch [1/5], Step [410/410], Loss: 1.8832
+Epoch [2/5], Step [41/410], Loss: 1.7225
+Epoch [2/5], Step [82/410], Loss: 1.7818
+Epoch [2/5], Step [123/410], Loss: 1.7184
+Epoch [2/5], Step [164/410], Loss: 1.7800
+Epoch [2/5], Step [205/410], Loss: 1.7764
+Epoch [2/5], Step [246/410], Loss: 1.5675
+Epoch [2/5], Step [287/410], Loss: 1.8576
+Epoch [2/5], Step [328/410], Loss: 1.7095
+Epoch [2/5], Step [369/410], Loss: 1.5358
+Epoch [2/5], Step [410/410], Loss: 1.5003
+Epoch [3/5], Step [41/410], Loss: 1.8917
+Epoch [3/5], Step [82/410], Loss: 1.7077
+Epoch [3/5], Step [123/410], Loss: 1.5400
+Epoch [3/5], Step [164/410], Loss: 1.7573
+Epoch [3/5], Step [205/410], Loss: 1.6932
+Epoch [3/5], Step [246/410], Loss: 1.7230
+Epoch [3/5], Step [287/410], Loss: 1.3912
+Epoch [3/5], Step [328/410], Loss: 1.4166
+Epoch [3/5], Step [369/410], Loss: 1.6659
+Epoch [3/5], Step [410/410], Loss: 1.7388
+Epoch [4/5], Step [41/410], Loss: 1.3460
+Epoch [4/5], Step [82/410], Loss: 2.0379
+Epoch [4/5], Step [123/410], Loss: 1.2562
+Epoch [4/5], Step [164/410], Loss: 1.6657
+Epoch [4/5], Step [205/410], Loss: 1.2052
+Epoch [4/5], Step [246/410], Loss: 1.2084
+Epoch [4/5], Step [287/410], Loss: 1.7888
+Epoch [4/5], Step [328/410], Loss: 1.7380
+Epoch [4/5], Step [369/410], Loss: 1.6586
+Epoch [4/5], Step [410/410], Loss: 1.1716
+Epoch [5/5], Step [41/410], Loss: 1.0965
+Epoch [5/5], Step [82/410], Loss: 1.0124
+Epoch [5/5], Step [123/410], Loss: 0.9751
+Epoch [5/5], Step [164/410], Loss: 1.6175
+Epoch [5/5], Step [205/410], Loss: 0.9532
+Epoch [5/5], Step [246/410], Loss: 1.5341
+Epoch [5/5], Step [287/410], Loss: 1.1030
+Epoch [5/5], Step [328/410], Loss: 2.8478
+Epoch [5/5], Step [369/410], Loss: 1.7214
+Epoch [5/5], Step [410/410], Loss: 1.6356
+Evaluating the model
+Accuracy: 0.5048543689320388
+Confusion Matrix:
+[[ 0  0  9  0  0]
+ [ 0  0 28  0  0]
+ [ 0  0 52  0  0]
+ [ 0  0  6  0  0]
+ [ 0  0  8  0  0]]
+Precision Score: 0.25487793382976714
+
+
+Fold 4:
+Training the model
+Epoch [1/5], Step [41/411], Loss: 1.8142
+Epoch [1/5], Step [82/411], Loss: 1.8101
+Epoch [1/5], Step [123/411], Loss: 1.7130
+Epoch [1/5], Step [164/411], Loss: 1.6931
+Epoch [1/5], Step [205/411], Loss: 1.7878
+Epoch [1/5], Step [246/411], Loss: 1.7758
+Epoch [1/5], Step [287/411], Loss: 1.7584
+Epoch [1/5], Step [328/411], Loss: 1.6499
+Epoch [1/5], Step [369/411], Loss: 1.7686
+Epoch [1/5], Step [410/411], Loss: 1.7571
+Epoch [2/5], Step [41/411], Loss: 1.5936
+Epoch [2/5], Step [82/411], Loss: 1.7844
+Epoch [2/5], Step [123/411], Loss: 1.5661
+Epoch [2/5], Step [164/411], Loss: 1.8005
+Epoch [2/5], Step [205/411], Loss: 1.7921
+Epoch [2/5], Step [246/411], Loss: 1.7438
+Epoch [2/5], Step [287/411], Loss: 1.5303
+Epoch [2/5], Step [328/411], Loss: 1.9339
+Epoch [2/5], Step [369/411], Loss: 1.9073
+Epoch [2/5], Step [410/411], Loss: 1.4652
+Epoch [3/5], Step [41/411], Loss: 1.4529
+Epoch [3/5], Step [82/411], Loss: 1.9537
+Epoch [3/5], Step [123/411], Loss: 1.7738
+Epoch [3/5], Step [164/411], Loss: 1.9606
+Epoch [3/5], Step [205/411], Loss: 1.3704
+Epoch [3/5], Step [246/411], Loss: 1.3667
+Epoch [3/5], Step [287/411], Loss: 2.0096
+Epoch [3/5], Step [328/411], Loss: 1.7843
+Epoch [3/5], Step [369/411], Loss: 1.2718
+Epoch [3/5], Step [410/411], Loss: 1.3078
+Epoch [4/5], Step [41/411], Loss: 1.7302
+Epoch [4/5], Step [82/411], Loss: 2.0692
+Epoch [4/5], Step [123/411], Loss: 1.2046
+Epoch [4/5], Step [164/411], Loss: 1.8264
+Epoch [4/5], Step [205/411], Loss: 1.1933
+Epoch [4/5], Step [246/411], Loss: 1.6467
+Epoch [4/5], Step [287/411], Loss: 1.1005
+Epoch [4/5], Step [328/411], Loss: 2.3082
+Epoch [4/5], Step [369/411], Loss: 1.8630
+Epoch [4/5], Step [410/411], Loss: 2.2915
+Epoch [5/5], Step [41/411], Loss: 0.9413
+Epoch [5/5], Step [82/411], Loss: 0.8651
+Epoch [5/5], Step [123/411], Loss: 2.6219
+Epoch [5/5], Step [164/411], Loss: 1.7302
+Epoch [5/5], Step [205/411], Loss: 1.5029
+Epoch [5/5], Step [246/411], Loss: 0.9837
+Epoch [5/5], Step [287/411], Loss: 0.8678
+Epoch [5/5], Step [328/411], Loss: 1.5166
+Epoch [5/5], Step [369/411], Loss: 0.8889
+Epoch [5/5], Step [410/411], Loss: 0.8850
+Evaluating the model
+Accuracy: 0.4117647058823529
+Confusion Matrix:
+[[ 0  0 18  0  0]
+ [ 0  0 26  0  0]
+ [ 0  0 42  0  0]
+ [ 0  0  8  0  0]
+ [ 0  0  8  0  0]]
+Precision Score: 0.1695501730103806
+
+
+Fold 5:
+Training the model
+Epoch [1/5], Step [41/411], Loss: 1.8116
+Epoch [1/5], Step [82/411], Loss: 1.7206
+Epoch [1/5], Step [123/411], Loss: 1.8430
+Epoch [1/5], Step [164/411], Loss: 1.7457
+Epoch [1/5], Step [205/411], Loss: 1.7307
+Epoch [1/5], Step [246/411], Loss: 1.7957
+Epoch [1/5], Step [287/411], Loss: 1.6580
+Epoch [1/5], Step [328/411], Loss: 1.6449
+Epoch [1/5], Step [369/411], Loss: 1.6328
+Epoch [1/5], Step [410/411], Loss: 1.8719
+Epoch [2/5], Step [41/411], Loss: 1.7799
+Epoch [2/5], Step [82/411], Loss: 1.9229
+Epoch [2/5], Step [123/411], Loss: 1.5650
+Epoch [2/5], Step [164/411], Loss: 1.5284
+Epoch [2/5], Step [205/411], Loss: 1.7218
+Epoch [2/5], Step [246/411], Loss: 1.4826
+Epoch [2/5], Step [287/411], Loss: 1.8033
+Epoch [2/5], Step [328/411], Loss: 1.8013
+Epoch [2/5], Step [369/411], Loss: 1.7057
+Epoch [2/5], Step [410/411], Loss: 1.6860
+Epoch [3/5], Step [41/411], Loss: 1.7514
+Epoch [3/5], Step [82/411], Loss: 1.4041
+Epoch [3/5], Step [123/411], Loss: 1.6527
+Epoch [3/5], Step [164/411], Loss: 2.0578
+Epoch [3/5], Step [205/411], Loss: 1.3436
+Epoch [3/5], Step [246/411], Loss: 1.3544
+Epoch [3/5], Step [287/411], Loss: 1.6822
+Epoch [3/5], Step [328/411], Loss: 1.2987
+Epoch [3/5], Step [369/411], Loss: 2.0964
+Epoch [3/5], Step [410/411], Loss: 1.7996
+Epoch [4/5], Step [41/411], Loss: 1.6332
+Epoch [4/5], Step [82/411], Loss: 1.2432
+Epoch [4/5], Step [123/411], Loss: 1.6022
+Epoch [4/5], Step [164/411], Loss: 1.2481
+Epoch [4/5], Step [205/411], Loss: 2.0706
+Epoch [4/5], Step [246/411], Loss: 1.1596
+Epoch [4/5], Step [287/411], Loss: 1.1472
+Epoch [4/5], Step [328/411], Loss: 1.0728
+Epoch [4/5], Step [369/411], Loss: 1.8389
+Epoch [4/5], Step [410/411], Loss: 0.9374
+Epoch [5/5], Step [41/411], Loss: 1.8468
+Epoch [5/5], Step [82/411], Loss: 2.2568
+Epoch [5/5], Step [123/411], Loss: 1.6096
+Epoch [5/5], Step [164/411], Loss: 1.8226
+Epoch [5/5], Step [205/411], Loss: 1.8155
+Epoch [5/5], Step [246/411], Loss: 0.9716
+Epoch [5/5], Step [287/411], Loss: 1.6237
+Epoch [5/5], Step [328/411], Loss: 1.8374
+Epoch [5/5], Step [369/411], Loss: 0.8726
+Epoch [5/5], Step [410/411], Loss: 2.0037
+Evaluating the model
+Accuracy: 0.4215686274509804
+Confusion Matrix:
+[[ 0  0 18  0  0]
+ [ 0  0 21  0  0]
+ [ 0  0 43  0  0]
+ [ 0  0 12  0  0]
+ [ 0  0  8  0  0]]
+Precision Score: 0.1777201076509035
+
+
+5-fold cross validation avg accuracy: 0.42297734627832
