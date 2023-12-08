@@ -2,7 +2,7 @@
 import datasplit
 import CNN
 import test
-import train
+import train_
 import torch
 import torch.nn as nn
 import numpy as np
