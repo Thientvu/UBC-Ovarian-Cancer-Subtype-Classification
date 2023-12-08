@@ -8,7 +8,7 @@ from torch.utils.data import DataLoader, Subset, random_split
 def process_data(dataset_path):
     # dataset_path = "Path to folder containing class folders of data"
     transform = transforms.Compose([
-        transforms.Resize((224,224)),
+        transforms.Resize((900,900)),
         transforms.ToTensor(),
     ])
 
