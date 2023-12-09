@@ -1,4 +1,4 @@
-import datasplit
+import datasplitDensenet
 import Densenet
 import torch
 import torch.nn as nn
@@ -52,7 +52,7 @@ def main():
     dataset_path = "/Users/thientoanvu/Desktop/Classes/CS184A/Final-project/train_thumbnails"
 
     # Split data into 5 folds
-    splits = datasplit.split_data(dataset_path)
+    splits = datasplitDensenet.split_data(dataset_path)
 
     # Initialize model
     learning_rate = 0.001
@@ -63,20 +63,25 @@ def main():
     for fold, (train_set, test_set) in enumerate(splits):
         print(f"Fold {fold + 1}:")
 
+        path = f"/Users/thientoanvu/Desktop/Classes/CS184A/Final-project/Pretrained-Densenet-Models/DenseNetModel{fold + 1}.pt"
+        
         # Initialize a new model for each fold
-        model = Densenet.DenseNet()
+        #model = Densenet.DenseNet()
+        model = torch.load(path)
+
         optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
         criterion = nn.CrossEntropyLoss()
 
         # Set up data loaders
-        test_loader, train_loader = datasplit.data_loaders(test_set, [train_set])
+        test_loader, train_loader = datasplitDensenet.data_loaders(test_set, [train_set])
 
         # Train model
-        train_model(model, train_loader, criterion, optimizer, num_epochs)
+        #train_model(model, train_loader, criterion, optimizer, num_epochs)
+        #torch.save(model, path)
 
         # Evaluate model
         accuracy, confusion_mat, precision = evaluate_model(model, test_loader)
-
+        
         print("Accuracy:", accuracy)
         print("Confusion Matrix:")
         print(confusion_mat)
