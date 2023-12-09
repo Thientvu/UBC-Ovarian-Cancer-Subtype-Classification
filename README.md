@@ -15,7 +15,19 @@ https://www.kaggle.com/competitions/UBC-OCEAN/overview
   
 For more information on the dataset, go to: https://www.kaggle.com/competitions/UBC-OCEAN/data
 
-## How to run CNN
+## How to train a CNN
+1. Go to **train_CNN.py**.
+2. In **main**, replace **dataset_path** with the path to your dataset.
+3. In **main**, replace **model_name** with the path to where you would like to save your model.
+
+   train_CNN.py will create and train a CNN model on the given dataset over 5 folds, 5 epochs each. It will print the accuracy, precision, and confusion of each model as it is trained.
+
+## How to run a pre-trained CNN
+1. Go to **run_CNN.py**
+2. Replace **dataset_path** with the path to your dataset.
+3. Replace **model** with the path to your pre-trained model.
+
+   run_CNN.py will run a pre-trained model on the given dataset and print the accuracy, precision, and confusion of the model.
 
 ## How to run Densenet
 1. Go to the **Densenet** folder, and click on **trainDensenet.py** 
