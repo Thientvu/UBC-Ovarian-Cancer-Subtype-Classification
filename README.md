@@ -4,8 +4,8 @@ https://www.kaggle.com/competitions/UBC-OCEAN/overview
 
 ## How to get the data 
 ### Google Drive
-- Download the **train_thumbnails** folder from **https://drive.google.com/drive/folders/1Gir6UvInaKr8oONJd4R1utX103zmc7dL?usp=share_link** (Make sure you're logged in using UCI email)
-- This folder already contains all the thumbnails images (split in 5 folders) that are used for running the model
+- Download the **train_thumbnails** folder from **https://drive.google.com/drive/folders/1aYZKUWF-ZTx0GpEr1JFvcgmGLEkluh1U?usp=share_link** (Make sure you're logged in using UCI email)
+- This folder already contains all the thumbnails images (split into 5 folders) that are used for running the model
 ### Kaggle
 - In case the Google Drive link doesn't work, go to **https://www.kaggle.com/competitions/UBC-OCEAN/data** and download the **train_thumbnails** folder on Kaggle
 - Go to the **save_images.py** file
