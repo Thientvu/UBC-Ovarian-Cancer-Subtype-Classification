@@ -1,6 +1,5 @@
 import datasplit
-from test import test
-from train_ import train
+from train_CNN import test
 import torch
 from sklearn.metrics import precision_score,confusion_matrix,accuracy_score
 
