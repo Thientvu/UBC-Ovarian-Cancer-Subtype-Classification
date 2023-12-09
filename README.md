@@ -6,6 +6,8 @@ https://www.kaggle.com/competitions/UBC-OCEAN/overview
 ### Google Drive
 - Download the **train_thumbnails** folder from **https://drive.google.com/drive/folders/1aYZKUWF-ZTx0GpEr1JFvcgmGLEkluh1U?usp=share_link** (Make sure you're logged in using UCI email)
 - This folder already contains all the thumbnails images (split into 5 folders) that are used for running the model
+- Access pre-trained CNN models here **https://drive.google.com/drive/folders/1MjbilZ4mO8C71ggOB1m8nf9MAvGidnbU?usp=sharing**
+- Access pre-trained DenseNet models here **https://drive.google.com/drive/folders/1JJi3Q7VAx5wxR6vugCz3pN7L9Edu6Fek?usp=sharing** 
 ### Kaggle
 - In case the Google Drive link doesn't work, go to **https://www.kaggle.com/competitions/UBC-OCEAN/data** and download the **train_thumbnails** folder on Kaggle
 - Go to the **save_images.py** file
