@@ -58,7 +58,7 @@ def test(model, data_loader):
 def main():
     # Load in data
     
-    dataset_path = "data path name"
+    dataset_path = "path to data folder"
     # Split data
     splits = datasplit.split_data(dataset_path)
 
@@ -90,7 +90,7 @@ def main():
         confusions.append(confusion)
 
         # Save model
-        model_name = "C:\\Users\\blues\\OneDrive\\Desktop\\UCI\\Fall '23\\CS 184A\\Models\\CNNmodel_full_" + str(i) + '.pt'
+        model_name = "path to model file"
         torch.save(CNNmodel, model_name)
 
     print(f'Average accuracy:\t{np.mean(accuracies)}')
