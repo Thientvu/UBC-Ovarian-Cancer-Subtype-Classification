@@ -4,8 +4,7 @@ https://www.kaggle.com/competitions/UBC-OCEAN/overview
 
 ## How to get the data 
 ### Google Drive
-- Download the **train_thumbnails** folder from **https://drive.google.com/drive/folders/1aYZKUWF-ZTx0GpEr1JFvcgmGLEkluh1U?usp=share_link** (Make sure you're logged in using UCI email)
-- This folder already contains all the thumbnails images (split into 5 folders) that are used for running the model
+- Download the **train_thumbnails** folder from **https://drive.google.com/drive/folders/1aYZKUWF-ZTx0GpEr1JFvcgmGLEkluh1U?usp=share_link** (Make sure you're logged in using UCI email) This folder contains all the thumbnails images (split into 5 folders) that are used for running the model
 - Access pre-trained CNN models here **https://drive.google.com/drive/folders/1MjbilZ4mO8C71ggOB1m8nf9MAvGidnbU?usp=sharing**
 - Access pre-trained DenseNet models here **https://drive.google.com/drive/folders/1JJi3Q7VAx5wxR6vugCz3pN7L9Edu6Fek?usp=sharing** 
 ### Kaggle
@@ -35,6 +34,5 @@ For more information on the dataset, go to: https://www.kaggle.com/competitions/
 ## How to run Densenet
 1. Go to the **Densenet** folder, and click on **trainDensenet.py** 
 2. Replace the value of the variable **dataset_path** with the path of where the **train_thumbnails** folder can be found on your local machine
-3. Download the **Densenet Models** folder https://drive.google.com/drive/folders/1aYZKUWF-ZTx0GpEr1JFvcgmGLEkluh1U?usp=share_link
-4. Replace the value of the variable **path** with the path of where the pretrained files **DenseNetModel1.pt**, **DenseNetModel2.pt**, **DenseNetModel3.pt**, **DenseNetModel4.pt**, **DenseNetModel5.pt** can be found on your local machine (All the .pt files should be in the **Densenet Models** folder)
-5. Run the **trainDensenet.py** file
+3. Replace the value of the variable **path** with the path of where the pretrained files **DenseNetModel1.pt**, **DenseNetModel2.pt**, **DenseNetModel3.pt**, **DenseNetModel4.pt**, **DenseNetModel5.pt** can be found on your local machine (All the .pt files should be in the **Densenet Models** folder)
+4. Run the **trainDensenet.py** file
