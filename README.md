@@ -2,11 +2,11 @@
 ## Topic overview
 https://www.kaggle.com/competitions/UBC-OCEAN/overview
 
-## Dataset
+## How to get the data 
 ### **train_thumbnails** folder
-- The thumbnails images that are separated into 5 different classes can be found in the **train_thumbnails** folder
+- This folder already contains all the thumbnails images that are used for running the model
 ### Kaggle
-- In case the **train_thumbnails** folder doesn't work, go to **https://www.kaggle.com/competitions/UBC-OCEAN/data**, download the **train_thumbnails** folder on Kaggle, and save it inside the **UBC-Ovarian-Cancer-subtypE-Classification folder**
+- In case the **train_thumbnails** folder doesn't work, go to **https://www.kaggle.com/competitions/UBC-OCEAN/data**, download the **train_thumbnails** folder on Kaggle, and save it inside the **UBC-Ovarian-Cancer-subtypE-Classification** folder
 - Go to the **save_images.py** file
 - Replace the value of the variable **df** with the path of where the **train.csv** file can be found on your local machine
 - Replace the value of the variable **root** with the path of where the **train_thumbnails** folder can be found on your local machine
