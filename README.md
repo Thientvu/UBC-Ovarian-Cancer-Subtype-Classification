@@ -3,8 +3,17 @@
 https://www.kaggle.com/competitions/UBC-OCEAN/overview
 
 ## Dataset
+### **train_thumbnails** folder
 - The thumbnails images that are separated into 5 different classes can be found in the **train_thumbnails** folder
-- For more data, go to: https://www.kaggle.com/competitions/UBC-OCEAN/data
+### Kaggle
+- In case the **train_thumbnails** folder doesn't work, go to **https://www.kaggle.com/competitions/UBC-OCEAN/data**, download the **train_thumbnails** folder on Kaggle, and save it inside the **UBC-Ovarian-Cancer-subtypE-Classification folder**
+- Go to the **save_images.py** file
+- Replace the value of the variable **df** with the path of where the **train.csv** file can be found on your local machine
+- Replace the value of the variable **root** with the path of where the **train_thumbnails** folder can be found on your local machine
+- Replace the value of the variable **new_root** with the path of where the **train_thumbnails** folder can be found on your local machine
+- Run the **save_images.py** to split the data into 5 different folders inside **train_thumbnails**
+  
+For more information on the dataset, go to: https://www.kaggle.com/competitions/UBC-OCEAN/data
 
 ## How to run CNN
 
