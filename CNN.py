@@ -1,6 +1,4 @@
-import torch
 import torch.nn as nn
-from sklearn.metrics import precision_score,confusion_matrix,accuracy_score
 
 class model(nn.Module):
     def __init__(self):
@@ -30,39 +28,41 @@ class model(nn.Module):
                                kernel_size=(11,11),
                                padding=1)
         self.flatten = nn.Flatten()
-        self.linear1 = nn.Linear(1020100,500)
+        self.linear1 = nn.Linear(4900,500)
         self.linear2 = nn.Linear(500,500)
         self.linear3 = nn.Linear(500,6)
         self.ReLU = nn.ReLU()
         self.softmax = nn.Softmax(dim=1)
-        self.pool = nn.MaxPool2d(kernel_size=(4,4),stride=2)
+        self.pool = nn.MaxPool2d(kernel_size=(2,2),stride=2)
         
 
     def forward(self, X):
         out = self.conv1(X)
+        out = self.pool(out)
         out = self.ReLU(out)
-        out = self.conv2(out)
 
+        out = self.conv2(out)
         out = self.pool(out)
         out = self.ReLU(out)
 
         out = self.conv3(out)
+        out = self.pool(out)
         out = self.ReLU(out)
+
         out = self.conv4(out)
-        
         out = self.pool(out)
         out = self.ReLU(out)
 
         out = self.conv5(out)
+        out = self.pool(out)
         out = self.ReLU(out)
-        out = self.conv6(out)
 
+        out = self.conv6(out)
         out = self.pool(out)
         out = self.ReLU(out)
 
         out = self.flatten(out)
         
-
         out = self.linear1(out)
         out = self.ReLU(out)
         out = self.linear2(out)
