@@ -55,43 +55,42 @@ def test(model, data_loader):
     
     return accuracy, precision, confusion
 
-def main():
-    # Load in data
-    
-    dataset_path = "path to data folder"
-    # Split data
-    splits = datasplit.split_data(dataset_path)
 
-    accuracies = []
-    precisions = []
-    confusions = []
+# Load in data
+dataset_path = "path to data folder"
+# Split data
+splits = datasplit.split_data(dataset_path)
 
-    for i in range(5):
-        # Choose one split to be test data, rest to be train data
-        test_loader, train_loader = datasplit.data_loaders(splits[i], splits[:i]+splits[i+1:])
+accuracies = []
+precisions = []
+confusions = []
 
-        # Initialize model
-        CNNmodel = CNN.model()
-        learning_rate = 0.001
-        optimizer = torch.optim.SGD(CNNmodel.parameters(), lr=learning_rate)
-        criterion = nn.CrossEntropyLoss()
+for i in range(5):
+    # Choose one split to be test data, rest to be train data
+    test_loader, train_loader = datasplit.data_loaders(splits[i], splits[:i]+splits[i+1:])
 
-        num_epochs = 5
+    # Initialize model
+    CNNmodel = CNN.model()
+    learning_rate = 0.001
+    optimizer = torch.optim.SGD(CNNmodel.parameters(), lr=learning_rate)
+    criterion = nn.CrossEntropyLoss()
 
-        # Train model over all epochs
-        train(CNNmodel,optimizer,criterion,train_loader,num_epochs)
+    num_epochs = 5
 
-        # Test model
-        CNNmodel.eval()
-        print(f'Split {i+1}:')
-        accuracy, precision, confusion = test(CNNmodel, test_loader)
-        accuracies.append(accuracy)
-        precisions.append(precision)
-        confusions.append(confusion)
+    # Train model over all epochs
+    train(CNNmodel,optimizer,criterion,train_loader,num_epochs)
 
-        # Save model
-        model_name = "path to model file"
-        torch.save(CNNmodel, model_name)
+    # Test model
+    CNNmodel.eval()
+    print(f'Split {i+1}:')
+    accuracy, precision, confusion = test(CNNmodel, test_loader)
+    accuracies.append(accuracy)
+    precisions.append(precision)
+    confusions.append(confusion)
 
-    print(f'Average accuracy:\t{np.mean(accuracies)}')
-    print(f'Average precision:\t{np.mean(precisions)}')
+    # Save model
+    model_name = "path to model file"
+    torch.save(CNNmodel, model_name)
+
+print(f'Average accuracy:\t{np.mean(accuracies)}')
+print(f'Average precision:\t{np.mean(precisions)}')
